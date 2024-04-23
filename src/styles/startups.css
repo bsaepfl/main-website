@@ -1,0 +1,21 @@
+.scrollbarHide {
+  scrollbar-width: none;
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.scrollbarHideSafari ::-webkit-scrollbar {
+  display: none; /* Chrome Safari Opera */
+}
+
+.content {
+  animation: slide 60s linear infinite; /* Adjust duration as needed */
+}
+@keyframes slide {
+  0% {
+    margin-left: 0px;
+    transform: translateX(0);
+  }
+  100% {
+    margin-left: -2975px;
+  }
+}

@@ -1,0 +1,11 @@
+
+.paraswap_logo{
+    width: 100%;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(145deg) brightness(109%) contrast(110%);
+    transition-duration: 500ms;
+}
+
+.paraswap_logo:hover {
+    transform: scale(1.05);
+    transition-duration: 500ms;
+}
