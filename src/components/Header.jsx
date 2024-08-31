@@ -20,6 +20,18 @@ const Links = () => {
       >
         Startups
       </Link>
+      <Link 
+        href={"/pastEvents"} 
+        className={classnames("hover:text-dark-200", linkClassName)}
+      >
+        Past Events
+      </Link>
+      <Link 
+        href={"/futureEvents"} 
+        className={classnames("hover:text-dark-200", linkClassName)}
+      >
+        Upcoming Events
+      </Link>
     </div>
   );
 };

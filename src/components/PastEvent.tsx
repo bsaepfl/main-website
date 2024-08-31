@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
 
 interface Props {
     titleBlue: string;
@@ -15,7 +16,7 @@ const PastEvent = ({ titleBlue, titleGray, description, image, image_alt, lien, 
         <div className=''>
             <div className='flex flex-col gap-2 justify-start'>
                 <div className='flex flex-row gap-4 justify-center lg:justify-start items-center'>
-                    <span className='bg-gradient-to-r bg-clip-text text-transparent from-dark-400 to-dark-900 text-3xl md:text-4xl'>
+                    <span className='bg-gradient-to-r bg-clip-text text-transparent from-blue-100 to-gray-500 text-3xl md:text-4xl'>
                         {titleBlue}
                     </span>
                     <span className='bg-gradient-to-r bg-clip-text text-transparent from-gray-100 to-gray-500 text-3xl md:text-4xl'>
@@ -32,7 +33,7 @@ const PastEvent = ({ titleBlue, titleGray, description, image, image_alt, lien, 
                     {image ? (
                         <div className='w-full flex justify-center items-center'>
                             <a href={lien} target="_blank" rel="noreferrer" className='py-10 w-10/12 md:w-5/12'>
-                                <img src={image} alt={image_alt} className={style}/>
+                                <Image src={image} alt={image_alt} className={style} height={100} width={100}/>
                             </a>
                         </div>
                     ) : (

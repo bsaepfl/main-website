@@ -1,11 +1,12 @@
 import React from "react";
-import hero2 from "../../../images/hero/bsa_illus_3.webp";
-import earth from "../../../images/hero/earth.webp";
+import hero2 from "../../../../public/hero/bsa_illus_3.webp";
+import earth from "../../../../public/hero/earth.webp";
 import { CgArrowLongDownL } from "react-icons/cg";
 import Link from "next/link";
 import BSALogo from "../../../images/hero/BSALogo";
 import BoxText from "../../BoxText";
 import NewsPopUp from "../../NewsPopUp";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -20,6 +21,7 @@ const Hero = () => {
                 active group of young passionate builders in Web3.
               </p>
             }
+            boxColor={"border-dark-200"}
           />
           <Link
             href="#JoinUs"
@@ -31,9 +33,12 @@ const Hero = () => {
         <div className="relative w-full md:w-[45%] max-w-[1000px] overflow-hidden hidden xl:inline">
           <a className="w-full flex">
             <img src={hero2} className="w-full z-10" />
-            <img
-              src={earth}
+            <Image
+            alt="earth"
+              src={earth.src}
               className="w-full absolute z-20 animate-spin-slow "
+              height={500}
+              width={500}
             />
           </a>
         </div>

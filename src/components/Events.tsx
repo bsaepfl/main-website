@@ -1,16 +1,17 @@
 import React from "react";
+import Image from "next/image";
 import "../styles/line.css";
 import "../styles/pastEvents.css";
 import NewEvent from "./NewEvent";
 import When from "./When";
-import solidity_course1 from "../images/events/solidity_hugo.webp";
-import solidity_course2 from "../images/events/solidity_pierre.webp";
-import events_illu from "../images/events/event_illustration.webp";
-import events_illu_b from "../images/events/event_illustration_b.webp";
-import events_illu_phone from "../images/events/event_illustration_phone.webp";
-import events_illu_phone_b from "../images/events/event_illustration_phone_b.webp";
-import logo_paraswap from "../images/events/Paraswap_logo_v2.webp";
-import logo_chainsecurity from "../images/events/chainsecurity_logo.webp";
+import solidity_course1 from "../../public/events/solidity_hugo.webp";
+import solidity_course2 from "../../public/events/solidity_pierre.webp";
+import events_illu from "../../public/events/event_illustration.webp";
+import events_illu_b from "../../public/events/event_illustration_b.webp";
+import events_illu_phone from "../../public/events/event_illustration_phone.webp";
+import events_illu_phone_b from "../../public/events/event_illustration_phone_b.webp";
+import logo_paraswap from "../../public/events/Paraswap_logo_v2.webp";
+import logo_chainsecurity from "../../public/events/chainsecurity_logo.webp";
 
 import PastEvent from "./PastEvent";
 
@@ -21,8 +22,8 @@ const Events = () => {
         <div className="flex flex-col lg:flex-row justify-start gap-32 lg:gap-0 lg:justify-between 2xl:pr-20 w-full h-full items-center lg:items-start">
           <div className="flex flex-col items-center lg:items-start gap-10 lg:h-80">
             <div className="flex flex-col md:flex-row md:justify-start items-center gap-4">
-              <span className="bg-gradient-to-r bg-clip-text text-transparent  from-dark-200 to-orange-500 text-6xl md:text-6xl">
-                CURRENT
+              <span className="bg-gradient-to-r bg-clip-text text-transparent  from-gray-100 to-gray-500 text-6xl md:text-6xl">
+                PAST
               </span>
               <span className="bg-gradient-to-r bg-clip-text text-transparent from-gray-100 to-gray-500 text-6xl md:text-6xl">
                 EVENTS
@@ -30,17 +31,17 @@ const Events = () => {
             </div>
             <div className="hidden lg:flex lg:flex-row h-full">
               <div className="flex flex-col h-full items-center px-1 ">
-                <div className="circle_orange"></div>
+                <div className="circle_blue"></div>
                 <div className="w-0 h-48 border-4 rounded-b-xl border-dark-600 drop-shadow-6xl"></div>
               </div>
               <div className="w-full"></div>
             </div>
           </div>
           <div className="h-auto hidden lg:block">
-            <img src={events_illu} alt="illustration events" />
+            <Image src={events_illu} alt="illustration events" width={300} height={300}/>
           </div>
           <div className="h-auto lg:hidden">
-            <img src={events_illu_phone} alt="illustration events" />
+            <Image src={events_illu_phone} alt="illustration events" width={100} height={100}/>
           </div>
         </div>
 
@@ -61,17 +62,17 @@ const Events = () => {
               <When
                 id="1"
                 title="WHEN ?"
-                list_1="Each wednesday from 18h to 19h30"
+                list_1="Each Thursday from 18h to 19h30"
                 list_2=""
               />
-              <When id="2" title="WHERE ?" list_1="CM 0 10" list_2="" />
+              <When id="2" title="WHERE ?" list_1="INF 202" list_2="" />
             </div>
             <div className="flex flex-row justify-center">
               <When
                 id="3"
                 title="FOR WHO ?"
-                list_1="BSA members only"
-                list_2=""
+                list_1="Newcommers and"
+                list_2="BSA Members"
               />
             </div>
           </div>
@@ -79,11 +80,11 @@ const Events = () => {
             <When
               id="1"
               title="WHEN ?"
-              list_1="Each wednesday from 18h to 19h30"
+              list_1="Each Thursday from 18h to 19h30"
               list_2=""
             />
-            <When id="2" title="WHERE ?" list_1="CM 0 10" list_2="" />
-            <When id="3" title="FOR WHO ?" list_1="BSA members" list_2="" />
+            <When id="2" title="WHERE ?" list_1="INF 202" list_2="" />
+            <When id="3" title="FOR WHO ?" list_1="Newcommers and BSA members" list_2="" />
           </div>
         </div>
 
@@ -124,13 +125,13 @@ const Events = () => {
               <When
                 id="1"
                 title="WHEN ?"
-                list_1="2023 Edition TBA"
+                list_1="2025 Edition TBA"
                 list_2="8 weeks duration"
               />
               <When
                 id="2"
                 title="WHERE ?"
-                list_1="2023 Edition TBA"
+                list_1="2025 Edition TBA"
                 list_2=""
               />
               <When id="3" title="FOR WHO ?" list_1="Everyone" list_2="" />
@@ -143,23 +144,28 @@ const Events = () => {
                 <span className="pl-5 pr-2 bg-gradient-to-r bg-clip-text text-transparent from-gray-100 to-gray-500 text-xl md:text-3xl select-none">
                   APPLICATIONS
                 </span>
-                <span className="pr-5 bg-gradient-to-r bg-clip-text text-transparent from-dark-200 to-orange-500 text-xl md:text-3xl select-none">
+                <span className="pr-5 bg-gradient-to-r bg-clip-text text-transparent from-gray-100 to-gray-500 text-xl md:text-3xl select-none">
                   CLOSED
                 </span>
               </button>
             </div>
             <div className=" w-full md:w-11/12 lg:w-10/12 rounded-lg">
-              <img
+              <Image
                 src={solidity_course2}
                 alt="Solidity Crash Course Blockchain Student Association Lausanne"
                 className="rounded-2xl w-full h-auto"
+                width={500}
+                height={500}
               />
             </div>
             <div className="w-full md:w-11/12 lg:w-10/12 rounded-lg lg:pb-10">
-              <img
+              <Image
                 src={solidity_course1}
                 alt="Solidity Crash Course Blockchain Student Association Lausanne"
                 className="rounded-2xl w-full h-auto"
+                layout="responsive"
+                width={700}
+                height={475}
               />
             </div>
           </div>
@@ -174,36 +180,12 @@ const Events = () => {
       </div>
 
       <div className="flex flex-col gap-32 lg:gap-14 lg:mb-10 w-full mt-40">
-        <div className="flex flex-col lg:flex-row justify-start lg:justify-between 2xl:pr-20 gap-32 md:gap-32 lg:gap-0 w-full h-full items-center lg:items-start">
-          <div className="flex flex-col items-center lg:items-start gap-10 lg:h-80">
-            <div className="flex flex-col md:flex-row md:justify-start items-center gap-4">
-              <span className="bg-gradient-to-r bg-clip-text text-transparent from-dark-400 to-dark-900 text-6xl">
-                PAST
-              </span>
-              <span className="bg-gradient-to-r bg-clip-text text-transparent from-gray-100 to-gray-500 text-6xl">
-                EVENTS
-              </span>
-            </div>
-            <div className="hidden lg:flex lg:flex-row h-full">
-              <div className="flex flex-col h-full items-center px-1 ">
-                <div className="circle_blue"></div>
-                <div className="rounded-b-xl w-0 h-48 border-4 border-dark-400 drop-shadow-6bxl"></div>
-              </div>
-              <div className="w-full"></div>
-            </div>
-          </div>
-          <div className="h-auto hidden lg:block">
-            <img src={events_illu_b} alt="illustration events" />
-          </div>
-          <div className="h-auto lg:hidden">
-            <img src={events_illu_phone_b} alt="illustration events" />
-          </div>
-        </div>
+       
         <PastEvent
           titleBlue="Workshop"
           titleGray="Paraswap"
           description="Talk with Mounir Benchemled, CEO of Paraswap"
-          image={logo_paraswap}
+          image={logo_paraswap.src}
           image_alt="logo-Paraswap"
           lien="https://www.paraswap.io/"
           style="paraswap_logo"
@@ -213,7 +195,7 @@ const Events = () => {
           titleBlue="Workshop"
           titleGray="ChainSecurity"
           description="Blockchain Security firm specialising in smart contracts and security audits. Learn more about the security challenges facing blockchain infrastructure such as Ethereum and understand how smart contracts can be used safely."
-          image={logo_chainsecurity}
+          image={logo_chainsecurity.src}
           image_alt="logo-ChainSecurity"
           lien="https://chainsecurity.com/"
           style="paraswap_logo"
