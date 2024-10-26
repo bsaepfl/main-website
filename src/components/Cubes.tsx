@@ -68,7 +68,7 @@ const Block: FunctionComponent<{
   return (
     <div className="relative group container items-left h-full bg-transparent">
       <a href={link_view} className="relative">
-        <Image alt="cube" src={cube} className="hover:scale-105 duration-300" />
+        <Image alt="cube" src={cube} className="hover:scale-105 duration-300" width={100} height={100}/>
       </a>
       <div className="flex flex-col w-full h-full left-0 bottom-0 bg-transparent absolute pointer-events-none">
         <div className="bg-transparent z-20 h-2/6 w-full" />

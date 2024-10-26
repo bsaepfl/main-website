@@ -4,6 +4,7 @@ import Ondefy_black from "../images/startups/OnDefy_black.png"
 import HoneyFinance from "../images/startups/HoneyFinance.jpeg"
 import APWine from "../images/startups/APWine.png"
 import Crypties from "../images/startups/Crypties.png"
+import Image from "next/image"
 
 const Startups = () => {
     return (
@@ -23,28 +24,28 @@ const Startups = () => {
                     href="https://apwine.fi"
                     target="_blank"
                     className=" justify-center flex hover:scale-110 duration-300">
-                    <img className="w-full" src={APWine} />
+                    <Image className="w-full" src={APWine} alt="apw" width={200} height={100}/>
                 </a>
                 <a
                     href="https://ondefy.com"
                     target="_blank"
                     className="  justify-center flex hover:scale-110 duration-300">
-                    <img className="w-64 dark:hidden" src={Ondefy_black} />
-                    <img className="w-64 hidden dark:block" src={Ondefy} />
+                    <Image className="w-64 dark:hidden" src={Ondefy_black} alt="ondefy_black" width={100} height={100}/>
+                    <Image className="w-64 hidden dark:block" src={Ondefy} alt="ondefy" width={100} height={100}/>
                 </a>
      
                 <a
                     href="https://y.at/%F0%9F%8D%AF%F0%9F%8D%AF%F0%9F%90%9D"
                     target="_blank"
                     className=" gap-2 justify-center items-center flex hover:scale-110 duration-300">
-                    <img className="w-3/12 rounded-full" src={HoneyFinance} />
+                    <Image className="w-3/12 rounded-full" src={HoneyFinance} alt="honeyfinance" width={100} height={100}/>
                     <span className="text-lg md:text-xl lg:text-2xl xl:text-4xl dark:text-white font-semibold">HoneyLabs</span>
                 </a>
                 <a
                     href="https://crypties.ch"
                     target="_blank"
                     className="  justify-center flex hover:scale-110 duration-300">
-                    <img className="w-64 " src={Crypties} />
+                    <Image className="w-64 " src={Crypties} alt="Crypties" width={100} height={100}/>
                 </a>
             </div>
 

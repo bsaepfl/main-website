@@ -12,7 +12,7 @@ const NewEvent = ({ titleOrange, titleGray, titleGray2, description }: Props) =>
     <div>
         <div className='flex flex-col gap-2 justify-start'>
             <div className='flex flex-row gap-4 justify-center lg:justify-start items-center'>
-                <span className='bg-gradient-to-r bg-clip-text text-transparent from-dark-200 to-orange-500 text-4xl'>
+                <span className='bg-gradient-to-r bg-clip-text text-transparent from-gray-100 to-gray-500 text-4xl'>
                     {titleOrange}
                 </span>
                 <span className='hidden md:block bg-gradient-to-r bg-clip-text text-transparent from-gray-100 to-gray-500 text-4xl'>

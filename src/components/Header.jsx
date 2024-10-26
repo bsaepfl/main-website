@@ -20,13 +20,25 @@ const Links = () => {
       >
         Startups
       </Link>
+      <Link 
+        href={"/pastEvents"} 
+        className={classnames("hover:text-dark-200", linkClassName)}
+      >
+        Past Events
+      </Link>
+      <Link 
+        href={"/futureEvents"} 
+        className={classnames("hover:text-dark-200", linkClassName)}
+      >
+        Upcoming Events
+      </Link>
     </div>
   );
 };
 
 const Header = () => {
   return (
-    <div className="flex h-[52px] sm:h-[70px] fixed w-full top-0 z-50 bg-dark-100 text-gray-200 drop-shadow-4xl">
+    <div className="flex h-[52px] sm:h-[70px] fixed w-full top-0 z-50 bg-dark-100 bg-white text-gray-800 drop-shadow-4xl">
       <div className="flex flex-row items-center w-full justify-between px-4 md:px-10">
         <Links />
       </div>
