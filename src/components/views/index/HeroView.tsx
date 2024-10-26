@@ -32,7 +32,7 @@ const Hero = () => {
         </div>
         <div className="relative w-full md:w-[45%] max-w-[1000px] overflow-hidden hidden xl:inline">
           <a className="w-full flex">
-            <img src={hero2} className="w-full z-10" />
+            <Image src={hero2} className="w-full z-10" alt="hero" width={100} height={100}/>
             <Image
             alt="earth"
               src={earth.src}

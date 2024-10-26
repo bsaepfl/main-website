@@ -2,6 +2,7 @@ import React from "react";
 import { startups } from "../../../assets/startups";
 import Link from "next/link"
 import InfiniteAutoSlider from "../../InfiniteAutoSlider";
+import Image from "next/image";
 
 const StartupView = () => {
   return (
@@ -50,7 +51,7 @@ const Startup = ({ img, title, description, link, key }) => {
       key={key}
       className="w-full max-w-[400px] shrink-0 p-4 sm:p-10 flex flex-col gap-8 items-center justify-between bg-dark-900 rounded-lg"
     >
-      <img src={img} className="" alt={title + " logo"} />
+      <Image src={img} className="" alt={title + " logo"} width={100} height={100}/>
       <h4 className="w-full font-semibold">{title}</h4>
       <p className="w-full italic text-sm">{description}</p>
       <Link

@@ -1,6 +1,7 @@
 import React from "react";
 import { startups } from "../../../assets/startups";
 import classNames from "classnames";
+import Image from "next/image";
 
 const StartUpsView = () => {
   return (
@@ -20,6 +21,7 @@ const StartUpsView = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-6 gap-12">
           {startups.map((startup, index) => (
             <Startup
+              key={startup.id || index} // Add unique key prop
               img={startup.img}
               title={startup.title}
               description={startup.description}
@@ -65,7 +67,7 @@ const Startup = ({ img, title, description, link, index }) => {
         <div className="w-9/12 h-80 flex flex-col gap-8">
           <div className="flex items-center justify-center h-1/5 mb-2">
             {img ? (
-              <img src={img} className="" alt={title + " logo"} />
+              <Image src={img} className="" alt={title + " logo"} width={250} height={250} />
             ) : (
               <div className="z-20 flex flex-row items-center justify-center w-12 h-12 text-3xl text-primary-200">
                 ?

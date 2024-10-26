@@ -90,7 +90,7 @@ export default function SuiHackathon2() {
             <h2 className="text-2xl font-semibold mb-4">About the Event</h2>
             <p className="text-gray-700 mb-6">
               Join us for an exciting 3-day virtual hackathon focused on building innovative applications on the Sui blockchain. 
-              Whether you're a seasoned blockchain developer or just getting started, this event is perfect for you!
+              Whether you&apos;re a seasoned blockchain developer or just getting started, this event is perfect for you!
             </p>
             
             <h2 className="text-2xl font-semibold mb-4">Event Schedule</h2>
