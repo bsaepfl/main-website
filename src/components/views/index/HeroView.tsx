@@ -1,11 +1,10 @@
 import React from "react";
-import hero2 from "../../../images/hero/bsa_illus_3.webp";
-import earth from "../../../images/hero/earth.webp";
-import { CgArrowLongDownL } from "react-icons/cg";
-import Link from "next/link";
+import hero_illustration from "../../../images/hero/hero_illustration.webp";
+import earth_illustration from "../../../images/hero/earth_illustration.webp";
 import BSALogo from "../../../images/hero/BSALogo";
 import BoxText from "../../BoxText";
-import NewsPopUp from "../../NewsPopUp";
+import Link from "next/link";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -30,9 +29,14 @@ const Hero = () => {
         </div>
         <div className="relative w-full md:w-[45%] max-w-[1000px] overflow-hidden hidden xl:inline">
           <a className="w-full flex">
-            <img src={hero2} className="w-full z-10" />
-            <img
-              src={earth}
+            <Image
+              alt="hero-image"
+              src={hero_illustration}
+              className="w-full z-10"
+            />
+            <Image
+              alt="earth"
+              src={earth_illustration}
               className="w-full absolute z-20 animate-spin-slow "
             />
           </a>
