@@ -1,14 +1,12 @@
 import React from "react";
 import classNames from "classnames";
 
-const BoxText = ({ text, boxColor }) => {
+const BoxText = ({ text, boxColor = "border-dark-200" }) => {
   return (
     <div className="relative px-4 sm:px-10">
       <div
         className={classNames(
-          "border-t-2 border-l-2 w-5 h-5 absolute left-0 top-0 rounded-tl-md hidden sm:flex",
-          boxColor ? boxColor : "border-dark-200"
-        )}
+          "border-t-2 border-l-2 w-5 h-5 absolute left-0 top-0 rounded-tl-md hidden sm:flex", boxColor)}
       />
       {text}
       <div
