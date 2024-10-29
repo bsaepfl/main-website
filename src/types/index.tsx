@@ -29,14 +29,6 @@ export type CurrentEvent = {
   minutes: number;
 };
 
-export type EventCardProps = {
-  title: string;
-  date?: React.JSX.Element;
-  description?: string;
-  footer?: React.JSX.Element;
-  color?: string;
-};
-
 export type DiscoverButtonProps = {
   ping: boolean;
   href?: string;
