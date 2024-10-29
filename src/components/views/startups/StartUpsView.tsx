@@ -21,6 +21,7 @@ const StartUpsView = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-6 gap-12">
           {startups.map((startup, index) => (
             <Startup
+              key={`startup${index}`}
               img={startup.img}
               title={startup.title}
               description={startup.description}
