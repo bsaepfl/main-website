@@ -1,6 +1,7 @@
 import React from "react";
 import { startups } from "../../../assets/startups";
 import classNames from "classnames";
+import Link from "next/link";
 
 const StartUpsView = () => {
   return (
@@ -35,7 +36,21 @@ const StartUpsView = () => {
 
 export default StartUpsView;
 
-const Startup = ({ img, title, description, link, index }) => {
+interface StartupProps {
+  img: string;
+  title: string;
+  description: string;
+  link: string;
+  index: number;
+}
+
+const Startup: React.FC<StartupProps> = ({
+  img,
+  title,
+  description,
+  link,
+  index,
+}) => {
   const l = startups.length;
   return (
     <div
@@ -55,8 +70,8 @@ const Startup = ({ img, title, description, link, index }) => {
           ? index + 1 === l
             ? `col-start-auto xl:col-start-4 `
             : index + 2 === l
-            ? "col-start-auto xl:col-start-2 "
-            : ""
+              ? "col-start-auto xl:col-start-2 "
+              : ""
           : ""
       )}
       style={{ willChange: "transform" }}
@@ -84,7 +99,7 @@ const Startup = ({ img, title, description, link, index }) => {
           </div>
 
           <div className="w-full flex items-center justify-center ">
-            <a
+            <Link
               href={link}
               target="_blank"
               rel="noopener noreferrer"
@@ -94,7 +109,7 @@ const Startup = ({ img, title, description, link, index }) => {
               )}
             >
               DISCOVER
-            </a>
+            </Link>
           </div>
         </div>
       </div>
