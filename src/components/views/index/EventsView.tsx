@@ -1,7 +1,4 @@
 import React from "react";
-import EventCard from "../../EventCard";
-import { HiArrowLongRight } from "react-icons/hi2";
-import { DiscoverButton } from "../../NewsPopUp";
 
 const EventsView = () => {
 
