@@ -1,7 +1,9 @@
 import React from "react";
 import { startups } from "../../../assets/startups";
-import Link from "next/link"
 import InfiniteAutoSlider from "../../InfiniteAutoSlider";
+import Link from "next/link"
+import Image from "next/image"
+
 
 const StartupView = () => {
   return (
@@ -44,23 +46,27 @@ const StartupView = () => {
 
 export default StartupView;
 
-const Startup = ({ img, title, description, link, key }) => {
-  return (
-    <div
-      key={key}
-      className="w-full max-w-[400px] shrink-0 p-4 sm:p-10 flex flex-col gap-8 items-center justify-between bg-dark-900 rounded-lg"
+interface StartupProps {
+  img: string;
+  title: string;
+  description: string;
+  link: string;
+}
+
+const Startup: React.FC<StartupProps> = ({ img, title, description, link }) => (
+  <div
+    className="w-full max-w-[400px] shrink-0 p-4 sm:p-10 flex flex-col gap-8 items-center justify-between bg-dark-900 rounded-lg"
+  >
+    <Image src={img} className="" alt={title + " logo"} width={400} height={200} />
+    <h4 className="w-full font-semibold">{title}</h4>
+    <p className="w-full italic text-sm">{description}</p>
+    <Link
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-fit relative rounded-md uppercase bg-transparent hover:bg-transparent border border-white text-dark-500 font-medium hover:text-dark-100 hover:bg-white duration-100 px-10 py-2 mt-3"
     >
-      <img src={img} className="" alt={title + " logo"} />
-      <h4 className="w-full font-semibold">{title}</h4>
-      <p className="w-full italic text-sm">{description}</p>
-      <Link
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-fit relative rounded-md uppercase bg-transparent hover:bg-transparent border border-white text-dark-500 font-medium hover:text-dark-100 hover:bg-white duration-100 px-10 py-2 mt-3"
-      >
-        Discover
-      </Link>
-    </div>
-  );
-};
+      Discover
+    </Link>
+  </div>
+);
