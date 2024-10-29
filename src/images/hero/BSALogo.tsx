@@ -1,6 +1,6 @@
 import React from "react";
 
-const BSALogo = ({ classname }) => {
+const BSALogo = ({ classname }: { classname: string }) => {
   return (
     <svg
       width="615"
