@@ -4,13 +4,6 @@ export type DayProps = {
   description: string;
 };
 
-export type ToggleButtonProps = {
-  onClick_: React.MouseEventHandler<HTMLButtonElement>;
-  index: number;
-  item: DayProps;
-  daySelected: DayProps;
-};
-
 export type ScheduleEventType = {
   name: string;
   icon: string;
@@ -42,7 +35,7 @@ export type FaqType = {
 };
 
 export type StartupType = {
-  img: HTMLImageElement;
+  img: string;
   title: string;
   description: string;
   link: string;
