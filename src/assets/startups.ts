@@ -43,6 +43,7 @@ export const startups: StartupType[] = [
       "Swap any token from any chain, generate yield, leverage your assets and simply access the best protocols.",
     link: "https://ondefy.com",
   },
+  // ? Remove this startup ?
   {
     img: "/startups/Crypties_white.webp",
     title: "Acquire cryptocurrencies anywhere with ease:",
