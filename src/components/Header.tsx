@@ -20,6 +20,12 @@ const Links = () => {
       >
         Startups
       </Link>
+      <Link
+        href={`/pastevents`}
+        className={classnames("hover:text-dark-200", linkClassName)}
+      >
+        Startups
+      </Link>
     </div>
   );
 };
