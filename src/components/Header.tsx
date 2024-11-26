@@ -24,7 +24,7 @@ const Links = () => {
         href={`/pastevents`}
         className={classnames("hover:text-dark-200", linkClassName)}
       >
-        Startups
+        Past Events
       </Link>
     </div>
   );
