@@ -1,8 +1,10 @@
 import React from "react";
 import classNames from "classnames";
+import Image from "next/image";
+import { StartupType } from "../types";
 import "../styles/startups.css";
 
-const InfiniteAutoSlider = ({ content }: { content: any }) => {
+const InfiniteAutoSlider = ({ content }: { content: StartupType[] }) => {
   return (
     <div
       id="SliderContent"
@@ -20,8 +22,10 @@ const InfiniteAutoSlider = ({ content }: { content: any }) => {
           )}
           key={`imageStartup${index}`}
         >
-          <img
+          <Image
             className="w-full object-contain"
+            width={200}
+            height={200}
             src={item.img}
             alt={item?.title + " logo"}
           />
@@ -40,8 +44,10 @@ const InfiniteAutoSlider = ({ content }: { content: any }) => {
               )}
               key={`imageStartup${index}`}
             >
-              <img
+              <Image
                 className="w-full object-contain"
+                width={200}
+                height={200}
                 src={item.img}
                 alt={item?.title + " logo"}
               />
