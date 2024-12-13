@@ -16,5 +16,3 @@ const Startups = () => {
 };
 
 export default Startups;
-
-export const Head = () => <title>BSA - About</title>;

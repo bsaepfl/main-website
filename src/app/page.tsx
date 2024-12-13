@@ -1,10 +1,10 @@
 import * as React from "react";
 import Header from "../components/Header";
-import HeroView from "../components/views/index/HeroView";
+import HeroView from "../components/views/home/HeroView";
 import Footer from "../components/Footer";
-import EventsView from "../components/views/index/EventsView";
-import JoinUsView from "../components/views/index/JoinUsView";
-import StartupView from "../components/views/index/StartupView";
+import EventsView from "../components/views/home/EventsView";
+import JoinUsView from "../components/views/home/JoinUsView";
+import StartupView from "../components/views/home/StartupView";
 
 export default function Home() {
   return (

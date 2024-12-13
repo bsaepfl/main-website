@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useEffect, useState } from "react";
+import React, { FunctionComponent } from "react";
 import Ondefy from "/startups/OnDefy.webp";
 import Spectra from "/startups/spectra_logo.png";
 import Crypties from "/startups/Crypties_white.webp";
@@ -88,7 +88,7 @@ const Startup: FunctionComponent<{
         <div className="w-9/12 h-80 flex flex-col gap-8">
           <div className="flex items-center justify-center h-1/5 mb-2">
             {img ? (
-              <Image alt="startup logo" src={img}/>
+              <Image alt="startup logo" src={img} />
             ) : (
               <div className="z-20 flex flex-row items-center justify-center w-12 h-12 text-3xl text-primary-200">
                 ?
