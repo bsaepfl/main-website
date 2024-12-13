@@ -24,8 +24,7 @@ export type CurrentEvent = {
 
 export type DiscoverButtonProps = {
   ping: boolean;
-  href?: string;
-  link?: string;
+  href: string;
   title: string;
 };
 
