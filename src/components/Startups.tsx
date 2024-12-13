@@ -4,7 +4,7 @@ import Spectra from "/startups/spectra_logo.png";
 import Crypties from "/startups/Crypties_white.webp";
 import Honey from "/startups/HONEY.webp";
 import AscentAdAstra from "/startups/AAA Logotext White.webp";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 const Startups = () => {
   return (
@@ -74,7 +74,7 @@ export default Startups;
 
 //CReation of "Project"
 const Startup: FunctionComponent<{
-  img?: string;
+  img?: StaticImageData;
   title?: string;
   description?: string;
   link_view?: string;
