@@ -39,3 +39,14 @@ export type StartupType = {
   description: string;
   link: string;
 };
+
+export type PastEventType = {
+  img: string;
+  date: string;
+  title: string;
+  month: string;
+  day: string;
+  place: string;
+  description: string;
+  link: string;
+};
