@@ -20,6 +20,12 @@ const Links = () => {
       >
         Startups
       </Link>
+      <Link
+        href={`/articles`}
+        className={classnames("hover:text-dark-200", linkClassName)}
+      >
+        Articles
+      </Link>
     </div>
   );
 };
