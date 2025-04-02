@@ -4,7 +4,7 @@ date: 2025-04-02
 authors: ["Walid Sofiane", "Victor Garbit"]
 ---
 
-# Blog Post 2 - Aleph Zero : Pioneering Privacy in Blockchain
+# Aleph Zero : Pioneering Privacy in Blockchain
 
 AlephZero is a high performance privacy-enhancing L1. It has emerged as a leader in addressing blockchain’s privacy challenges by integrating advanced cryptographic techniques to ensure secure and private transactions. This article delves into the technical innovations Aleph Zero employs to enhance privacy.
 
