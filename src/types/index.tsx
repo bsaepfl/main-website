@@ -39,3 +39,12 @@ export type StartupType = {
   description: string;
   link: string;
 };
+
+export interface Article {
+  id: string;
+  title: string;
+  body: string;
+  date: string;
+  authors: string[];
+  image?: string;
+}
