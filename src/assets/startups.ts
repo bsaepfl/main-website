@@ -23,6 +23,13 @@ export const startups: StartupType[] = [
     link: "https://metacube.games/",
   },
   {
+    img: "/startups/abstract-horizon.png",
+    title: "Learn everything about the Abstract ecosystem:",
+    description:
+      "Abstract Horizon is the leading media about the Abstract Chain, a layer 2 blockchain focused on consumer applications.",
+    link: "https://abstracthorizon.xyz/",
+  },
+  {
     img: "/startups/Honey-FullLogo-White.png",
     title: "Turn NFTs into financial assets:",
     description:
@@ -42,13 +49,5 @@ export const startups: StartupType[] = [
     description:
       "Swap any token from any chain, generate yield, leverage your assets and simply access the best protocols.",
     link: "https://ondefy.com",
-  },
-  // ? Remove this startup ?
-  {
-    img: "/startups/Crypties_white.webp",
-    title: "Acquire cryptocurrencies anywhere with ease:",
-    description:
-      "With Crypties you can acquire crypto easily nearly anywhere with more than 800 points of sales in Switzerland.",
-    link: "",
   },
 ];
