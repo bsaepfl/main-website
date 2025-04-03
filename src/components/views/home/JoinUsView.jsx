@@ -6,6 +6,7 @@ import Youtube from "../../../images/logo/Youtube";
 import { HiArrowLongRight } from "react-icons/hi2";
 import Instagram from "../../../images/logo/Instagram";
 import LinkedIn from "../../../images/logo/LinkedIn";
+import Github from "@/images/logo/Github";
 
 const JoinUs = () => {
   return (
@@ -73,11 +74,12 @@ const JoinUs = () => {
         <BoxText
           text={
             <div className="flex flex-row justify-center items-center gap-4 sm:gap-10 py-4 px-10 flex-wrap">
-              <Telegram />
-              <Twitter />
-              <Youtube />
-              <Instagram />
-              <LinkedIn />
+              <Telegram link="https://t.me/+Yg2GqxoXDIIwYWJk" />
+              <Twitter link="https://twitter.com/bsa_epfl" />
+              <Youtube link="https://www.youtube.com/channel/UCk24QUxKrSrJNxmp9EHICAg" />
+              <Instagram link="https://www.instagram.com/bsaepfl/" />
+              <LinkedIn link="https://www.linkedin.com/company/blockchain-student-association/mycompany/" />
+              <Github link="https://github.com/bsaepfl" />
             </div>
           }
         />
