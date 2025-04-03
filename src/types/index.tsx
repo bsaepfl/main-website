@@ -48,3 +48,13 @@ export interface Article {
   authors: string[];
   image?: string;
 }
+
+export interface Member {
+  id: string;
+  name: string;
+  section: string;
+  image?: string;
+  twitter?: string;
+  github?: string;
+  linkedin?: string;
+}
