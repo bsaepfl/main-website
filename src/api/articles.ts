@@ -12,7 +12,7 @@ export async function getArticles(): Promise<Article[]> {
     const articles = articleIds.map((id) => {
         const articleDir = path.join(articlesBaseDir, id);
         const mdFilePath = path.join(articleDir, 'index.md');
-        const imagePath = path.join(articleDir, 'image.jpg');
+        const imagePath = path.join(articleDir, 'header.jpg');
 
         // Read the markdown file
         const fileContent = fs.readFileSync(mdFilePath, 'utf-8');
@@ -23,7 +23,7 @@ export async function getArticles(): Promise<Article[]> {
 
         // Check if image exists and set its public path
         const imagePublicPath = fs.existsSync(imagePath)
-            ? `/articles/${id}/image.png`
+            ? `/articles/${id}/header.jpg`
             : undefined;
 
         return {
@@ -33,6 +33,7 @@ export async function getArticles(): Promise<Article[]> {
             date: dateString,
             authors: data.authors,
             image: imagePublicPath,
+            sponsor: data.sponsor ? data.sponsor : undefined,
         };
     });
 

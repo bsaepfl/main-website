@@ -47,6 +47,7 @@ export interface Article {
   date: string;
   authors: string[];
   image?: string;
+  sponsor?: string;
 }
 
 export interface Member {
