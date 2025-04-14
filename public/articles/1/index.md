@@ -2,6 +2,7 @@
 title: The Transparency-Privacy Trade Off
 date: 2025-04-02
 authors: ["Walid Sofiane", "Victor Garbit"]
+sponsor: "Aleph Zero"
 ---
 
 # The Transparency-Privacy Trade Off
